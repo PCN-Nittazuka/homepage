@@ -1,0 +1,142 @@
+html,body{
+    background-color: #ffffff;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-family:Verdana,"ヒラギノ角ゴ Pro W3";
+    scroll-behavior:smooth;
+}
+
+@font-face
+{
+    font-family: "ichigojam";
+    font-style: normal;
+    font-weight: 400;
+    src: local('IchigoJam-1.4'), local('IchigoJam-1.4-Regular'),
+         url("https://15-jam.vercel.app/IchigoJam-1.4.woff") format('woff');
+}
+
+#title{
+    border-bottom: solid 2px #fdd6d6;
+    background-color: #fffcea;
+}
+
+#mokuji{
+    /* border: inset 3px red;
+    /* border-radius: 20px; */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+    padding: 1rem 2rem;
+  border-top: 4px solid #a0a0a0;
+  border-right: 4px solid #666;
+  border-bottom: 4px solid #333;
+  border-left: 4px solid #868888;
+  border-radius: 0;
+  background-image: -webkit-linear-gradient(135deg, #ccc 0%, #868888 20%, #d8dcdc 34%, white 53%, #ccc 100%);
+  background-image: linear-gradient(-45deg, #ccc 0%, #868888 20%, #d8dcdc 34%, white 53%, #ccc 100%);
+}
+
+
+#jisen{
+    border-bottom: solid 2px black;
+}
+
+#left{
+    border-bottom: dashed 2px black;
+}
+
+#bottom{
+    margin-bottom: 10px;
+}
+
+#club{
+    margin-top: 80px;
+    background-color: black;
+    color: white;
+}
+
+#ezgif{
+    margin-top: 40px;
+    width: 40%;
+}
+
+#Contents{
+    margin-top: 80px;
+    font-size: 20px;
+}
+
+#hyo{
+    margin-top: 50px;
+    width: 800px;
+    height: 500px;
+    font-size: 25px;
+    border-color: #ff9e20;
+}
+
+iframe{
+    margin-top: 50px;
+}
+
+#ichigojam{
+    font-family: "ichigojam";
+}
+
+#work{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#end{
+    text-align: left;
+}
+
+h1{
+    background-color: #fff3b1;
+}
+
+a{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  a::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #31aae2;
+    transition: .3s;
+    transform: translateX(-50%);
+  }
+  
+  a:hover::after{
+    width: 100%;
+  }
+a:hover{
+    color: #4993cf;
+}
+
+#sakuhin{
+    margin-top: 50px;
+    width: 70%;
+    height: 500px;
+    font-size: 20px;
+}
+
+#saktex{
+    border-bottom: solid 1px red;
+}
+
+#sakich{
+    font-family: "ichigojam";
+    font-size: 40px;
+    color: #149A65;
+}
+
+#sakjav{
+    font-size: 50px;
+    color: #F0DB4F;
+}
