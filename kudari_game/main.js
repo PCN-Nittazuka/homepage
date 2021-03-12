@@ -80,7 +80,9 @@ function draw() {
 
 	context.clearRect(0, 0, canvas.width, canvas.height);
 	context.font = "30px bold";
+	context.fillStyle = "white"
 	context.fillText("SCORE:" + score, 0, 25);
+	drawMy();
 
 	for (let i = 0; i < ball.length; i++) {
 		context.fillStyle = ball[i].color;
@@ -108,7 +110,6 @@ function draw() {
 			score++;
 		}
 	}
-	drawMy();
 }
 
 setInterval(ballAdd, 25);
