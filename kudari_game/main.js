@@ -1,15 +1,17 @@
 'use strict';
 
-let mX = 700;
+let canvas = document.getElementById("canvas");
+let context = canvas.getContext("2d");
+
+let mX = canvas.width / 2;
 let mY = 100;
-let mW = 20;
-let mH = 20;
+let mW = 10;
+let mH = 10;
 let score = 0;
 let rightPressed = false;
 let leftPressed = false;
 
-let canvas = document.getElementById("canvas");
-let context = canvas.getContext("2d");
+
 
 let colorList = [
 	"red",
@@ -75,11 +77,11 @@ function drawMy() {
 }
 
 function draw() {
-	let w = 10;
-	let h = 10;
+	let w = 5;
+	let h = 5;
 
 	context.clearRect(0, 0, canvas.width, canvas.height);
-	context.font = "30px bold";
+	context.font = "15px bold";
 	context.fillStyle = "white"
 	context.fillText("SCORE:" + score, 0, 25);
 	drawMy();
@@ -91,7 +93,7 @@ function draw() {
 
 		if (ball[i].y > mY - mH && ball[i].y < mY + mH) {
 			if (ball[i].x > mX - mW && ball[i].x < mX + mW) {
-				context.font = "100px bold";
+				context.font = "50px bold";
 				context.fillStyle = ball[i].color;
 				context.fillText("GAME OVER", canvas.width / 3, canvas.height / 3);
 				context.fillText("SCORE:" + score, canvas.width / 3, canvas.height / 2);
